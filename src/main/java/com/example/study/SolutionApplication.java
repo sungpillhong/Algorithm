@@ -4,6 +4,7 @@ import com.example.study.week4.LeetCode_maximumcoin;
 import com.example.study.week4.LeetCode_removeoutermost;
 import com.example.study.week5.Programmers_42747;
 import com.example.study.week5.Programmers_42891;
+import com.example.study.week6.Programmers_43164;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.*;
@@ -14,10 +15,10 @@ public class SolutionApplication {
 
     public static void main(String[] args) {
 
-        int[] food_times = {6,5,4,3,1};
-        long k = 10;
-        Programmers_42891 programmers_42891 = new Programmers_42891();
-        System.out.println(programmers_42891.solution(food_times, k));
+        String[][] tickets = {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL", "SFO"}};
+        Programmers_43164 programmers_43164 = new Programmers_43164();
+        System.out.println(programmers_43164.solution(tickets));
+        //ICN, JFK, HND, IAD
 
     }
 }
