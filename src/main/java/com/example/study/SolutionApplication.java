@@ -9,6 +9,7 @@ import com.example.study.week7.LeetCode_binarysearch;
 import com.example.study.week7.LeetCode_subsequence;
 import com.example.study.week8.LeetCode_stack;
 import com.example.study.week8.Programmers_42628;
+import com.example.study.week9.LeetCode_verically;
 import com.example.study.week9.Programmers_12927;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -24,12 +25,11 @@ public class SolutionApplication {
 
     public static void main(String[] args) {
 
-        Programmers_12927 programmers_12927 = new Programmers_12927();
+        LeetCode_verically leetCode_verically = new LeetCode_verically();
 
-        int n = 4;
-        int[] works = {4,5,6};
-        System.out.println(programmers_12927.solution(n, works));
+        String s = "TO BE OR NOT TO BE";
 
+        System.out.println(leetCode_verically.printVertically(s));
 
     }
 }
