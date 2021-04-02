@@ -1,5 +1,6 @@
 package com.example.study;
 
+import com.example.study.week10.LeetCode_subArray;
 import com.example.study.week4.LeetCode_maximumcoin;
 import com.example.study.week4.LeetCode_removeoutermost;
 import com.example.study.week5.Programmers_42747;
@@ -24,12 +25,12 @@ import java.util.concurrent.ForkJoinPool;
 public class SolutionApplication {
 
     public static void main(String[] args) {
+        int answer = 0;
+        LeetCode_subArray leetCode_subArray = new LeetCode_subArray();
+        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
+        answer = leetCode_subArray.maxSubArray(nums);
+        System.out.println(answer);
 
-        LeetCode_verically leetCode_verically = new LeetCode_verically();
-
-        String s = "TO BE OR NOT TO BE";
-
-        System.out.println(leetCode_verically.printVertically(s));
 
     }
 }
