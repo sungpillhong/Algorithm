@@ -1,7 +1,7 @@
 package com.example.study.week10;
 
 public class LeetCode_subArray {
-
+//https://leetcode.com/problems/maximum-subarray/
     public int maxSubArray(int[] nums) {
 
         int length = nums.length;

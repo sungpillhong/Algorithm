@@ -1,5 +1,6 @@
 package com.example.study;
 
+import com.example.study.week10.LeetCode_closest;
 import com.example.study.week10.LeetCode_subArray;
 import com.example.study.week4.LeetCode_maximumcoin;
 import com.example.study.week4.LeetCode_removeoutermost;
@@ -26,9 +27,10 @@ public class SolutionApplication {
 
     public static void main(String[] args) {
         int answer = 0;
-        LeetCode_subArray leetCode_subArray = new LeetCode_subArray();
-        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
-        answer = leetCode_subArray.maxSubArray(nums);
+        LeetCode_closest leetCode_closest = new LeetCode_closest();
+        int[] nums = {0,1,2};
+        int target = 3;
+        answer = leetCode_closest.threeSumClosest(nums,target);
         System.out.println(answer);
 
 
