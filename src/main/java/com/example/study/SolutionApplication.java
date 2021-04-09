@@ -28,8 +28,8 @@ public class SolutionApplication {
     public static void main(String[] args) {
         int answer = 0;
         LeetCode_closest leetCode_closest = new LeetCode_closest();
-        int[] nums = {0,1,2};
-        int target = 3;
+        int[] nums = {-1,2,1,-4};
+        int target = 1;
         answer = leetCode_closest.threeSumClosest(nums,target);
         System.out.println(answer);
 
