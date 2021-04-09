@@ -2,6 +2,7 @@ package com.example.study;
 
 import com.example.study.week10.LeetCode_closest;
 import com.example.study.week10.LeetCode_subArray;
+import com.example.study.week11.LeetCode_graycode;
 import com.example.study.week4.LeetCode_maximumcoin;
 import com.example.study.week4.LeetCode_removeoutermost;
 import com.example.study.week5.Programmers_42747;
@@ -27,12 +28,9 @@ public class SolutionApplication {
 
     public static void main(String[] args) {
         int answer = 0;
-        LeetCode_closest leetCode_closest = new LeetCode_closest();
-        int[] nums = {-1,2,1,-4};
-        int target = 1;
-        answer = leetCode_closest.threeSumClosest(nums,target);
-        System.out.println(answer);
-
+        LeetCode_graycode leetCode_graycode = new LeetCode_graycode();
+        int n = 3;
+        System.out.println(leetCode_graycode.grayCode(n));
 
     }
 }
