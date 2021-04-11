@@ -3,6 +3,7 @@ package com.example.study;
 import com.example.study.week10.LeetCode_closest;
 import com.example.study.week10.LeetCode_subArray;
 import com.example.study.week11.LeetCode_graycode;
+import com.example.study.week11.LeetCode_interleaving;
 import com.example.study.week4.LeetCode_maximumcoin;
 import com.example.study.week4.LeetCode_removeoutermost;
 import com.example.study.week5.Programmers_42747;
@@ -28,9 +29,11 @@ public class SolutionApplication {
 
     public static void main(String[] args) {
         int answer = 0;
-        LeetCode_graycode leetCode_graycode = new LeetCode_graycode();
-        int n = 3;
-        System.out.println(leetCode_graycode.grayCode(n));
+        LeetCode_interleaving leetCode_interleaving = new LeetCode_interleaving();
+        String s1 = "aabcc";
+        String s2 = "dbbca";
+        String s3 = "aadbbbaccc";
+        System.out.println(leetCode_interleaving.isInterleave(s1,s2,s3));
 
     }
 }
