@@ -4,6 +4,7 @@ import com.example.study.week10.LeetCode_closest;
 import com.example.study.week10.LeetCode_subArray;
 import com.example.study.week11.LeetCode_graycode;
 import com.example.study.week11.LeetCode_interleaving;
+import com.example.study.week12.BaekJoon_ATM;
 import com.example.study.week4.LeetCode_maximumcoin;
 import com.example.study.week4.LeetCode_removeoutermost;
 import com.example.study.week5.Programmers_42747;
@@ -28,12 +29,11 @@ import java.util.concurrent.ForkJoinPool;
 public class SolutionApplication {
 
     public static void main(String[] args) {
-        int answer = 0;
-        LeetCode_interleaving leetCode_interleaving = new LeetCode_interleaving();
-        String s1 = "aabcc";
-        String s2 = "dbbca";
-        String s3 = "aadbbbaccc";
-        System.out.println(leetCode_interleaving.isInterleave(s1,s2,s3));
 
+        int answer= 0;
+        BaekJoon_ATM baekJoon_atm = new BaekJoon_ATM();
+        int[] waitPerson = {3,1,4,3,2};
+        answer = baekJoon_atm.atm(waitPerson);
+        System.out.println("최소값 : "+ answer);
     }
 }
