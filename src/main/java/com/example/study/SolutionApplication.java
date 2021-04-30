@@ -6,6 +6,7 @@ import com.example.study.week11.LeetCode_graycode;
 import com.example.study.week11.LeetCode_interleaving;
 import com.example.study.week12.BaekJoon_ATM;
 import com.example.study.week13.Hacker_prisoner;
+import com.example.study.week14.Programmers_printer;
 import com.example.study.week4.LeetCode_maximumcoin;
 import com.example.study.week4.LeetCode_removeoutermost;
 import com.example.study.week5.Programmers_42747;
@@ -30,12 +31,11 @@ import java.util.concurrent.ForkJoinPool;
 public class SolutionApplication {
 
     public static void main(String[] args) {
-        int n = 9;
-        int m = 6;
-        int s = 2;
-        int answer= 0;
-        Hacker_prisoner hacker_prisoner = new Hacker_prisoner();
-        answer = hacker_prisoner.saveThePrisoner(n,m,s);
-        System.out.println("마지막으로 사탕받은 수감자 번호 : "+ answer);
+        int[] priorities = {1, 1, 9, 1, 1, 1};
+        int locations = 0;
+
+        Programmers_printer programmers_printer = new Programmers_printer();
+        System.out.println(programmers_printer.solution(priorities,locations));
+
     }
 }
